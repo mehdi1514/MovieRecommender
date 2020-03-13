@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>
+            Movie Recommender
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Jekyll v3.8.6">
+        <style type="text/css">
+            .content{
+                margin-top: 12.5%;
+                margin-left: 14.5%;
+                width: 70%;
+            }
+
+            body {
+                background-color: #000000;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23100b1c' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23151331' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23191947' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%231a1f5e' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23192577' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+
+
+            
+
+.animation-target {
+  -webkit-animation: animation 2000ms linear both;
+  animation: animation 2000ms linear both;
+}
+
+/* Generated with Bounce.js. Edit at http://bouncejs.com#%7Bs%3A%5B%7BT%3A%22c%22%2Ce%3A%22B%22%2Cd%3A2000%2CD%3A0%2Cf%3A%7Bx%3A0%2Cy%3A0%7D%2Ct%3A%7Bx%3A1%2Cy%3A1%7D%2Cs%3A3%2Cb%3A4%7D%5D%7D */
+
+@-webkit-keyframes animation { 
+  0% { -webkit-transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  5.61% { -webkit-transform: matrix3d(0.645, 0, 0, 0, 0, 0.645, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.645, 0, 0, 0, 0, 0.645, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  8.41% { -webkit-transform: matrix3d(0.866, 0, 0, 0, 0, 0.866, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.866, 0, 0, 0, 0, 0.866, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  11.11% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  14.21% { -webkit-transform: matrix3d(0.925, 0, 0, 0, 0, 0.925, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.925, 0, 0, 0, 0, 0.925, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.22% { -webkit-transform: matrix3d(0.907, 0, 0, 0, 0, 0.907, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.907, 0, 0, 0, 0, 0.907, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  33.33% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  39.44% { -webkit-transform: matrix3d(0.994, 0, 0, 0, 0, 0.994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.994, 0, 0, 0, 0, 0.994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  55.66% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  61.66% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  77.88% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  83.98% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}
+
+@keyframes animation { 
+  0% { -webkit-transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  5.61% { -webkit-transform: matrix3d(0.645, 0, 0, 0, 0, 0.645, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.645, 0, 0, 0, 0, 0.645, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  8.41% { -webkit-transform: matrix3d(0.866, 0, 0, 0, 0, 0.866, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.866, 0, 0, 0, 0, 0.866, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  11.11% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  14.21% { -webkit-transform: matrix3d(0.925, 0, 0, 0, 0, 0.925, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.925, 0, 0, 0, 0, 0.925, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.22% { -webkit-transform: matrix3d(0.907, 0, 0, 0, 0, 0.907, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.907, 0, 0, 0, 0, 0.907, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  33.33% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  39.44% { -webkit-transform: matrix3d(0.994, 0, 0, 0, 0, 0.994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.994, 0, 0, 0, 0, 0.994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  55.66% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  61.66% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  77.88% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  83.98% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}
+
+
+
+
+
+        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        
+        {% block content %}
+            <div class="container-fluid">
+                <div class="jumbotron text-center content animation-target">
+                    <h1 class="display-3">Movie Recommender</h1>
+                    <p class="lead">
+                        The idea is that you rate several pre-defined genres based on your taste and then<br/> receive a recommendation list containing the movies  that you'll most probably like! <br/><br/><font color="navy">Press Go when you are ready!
+                    </p>
+
+                    <p class="lead">
+                        <a class="btn btn-dark btn-lg" style="background-color: #192577;" href="/rating" role="button">Go</a>
+                    </p>
+                </div>
+            </div>
+        {% endblock %}
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
